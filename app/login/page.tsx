@@ -6,7 +6,7 @@ export default function LoginPage() {
       <div className="mx-auto flex min-h-screen max-w-7xl items-center justify-center px-6 py-8">
         <div className="grid w-full max-w-6xl overflow-hidden rounded-3xl bg-white shadow-xl lg:grid-cols-2">
 
-          {/* Right Side - Login Form */}
+          {/* Left Side - Login Form */}
           <div className="flex items-center justify-center p-8 lg:p-16">
             <div className="w-full max-w-md">
 
@@ -87,7 +87,7 @@ export default function LoginPage() {
             </div>
           </div>
 
-          {/* Left Side - Illustration */}
+          {/* Right Side - Illustration */}
           <div className="flex items-center justify-center bg-[#eef3ff] p-8 lg:p-16">
             <Image
               src="/images/HaftaLoginImg.png"
