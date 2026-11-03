@@ -40,7 +40,7 @@ export default function SignUpPage() {
                   <input
                     type="email"
                     placeholder="you@example.com"
-                    className="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-blue-500"
+                    className="w-full text-slate-500 rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-blue-500"
                   />
                 </div>
 
@@ -52,7 +52,7 @@ export default function SignUpPage() {
                   <input
                     type="password"
                     placeholder="Enter your password"
-                    className="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-blue-500"
+                    className="w-full text-slate-500 rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-blue-500"
                   />
                 </div>
 
@@ -64,7 +64,7 @@ export default function SignUpPage() {
                   <input
                     type="password"
                     placeholder="Enter your password"
-                    className="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-blue-500"
+                    className="w-full text-slate-500 rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-blue-500"
                   />
                 </div>
 

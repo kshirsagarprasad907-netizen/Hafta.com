@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar";
 import DashMetrics from "../components/dashMetrics";
-import { title } from "process";
+import RecentEntriesList from "../components/listItem";
 
 const stats = [
   {
@@ -25,6 +25,23 @@ const stats = [
   },
 ];
 
+const listEntries = [
+  {
+    date: "27th Oct, 10:42 am",
+    area: "Pimple Saudagar",
+    amount: 5000,
+    enterprise:"Vella Paan",
+    officer: "Cheap Singham",
+  },
+  {
+    date: "1st Nov, 04:12 pm",
+    area: "Pimple Saudagar",
+    amount: 10000,
+    enterprise:"Busy Paan",
+    officer: "Real Singham",
+  }
+]
+
 
 export default function Home() {
 
@@ -33,7 +50,7 @@ export default function Home() {
       {/* Navbar Component Below */}
       <Navbar/>
 
-      <main className="mx-auto max-w-7xl px-4 py-6">
+      <main className="mx-auto max-w-[1400px] px-4 py-6">
         {/* HERO */}
         <div className="rounded-xl border border-slate-200 bg-white p-6">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
@@ -51,7 +68,7 @@ export default function Home() {
                   + Record Collection
                 </button>
 
-                <button className="rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm">
+                <button className="rounded-lg text-slate-600 border border-slate-200 bg-white px-4 py-2 text-sm">
                   View Networks
                 </button>
               </div>
@@ -114,10 +131,21 @@ export default function Home() {
                   <th className="px-6 py-4">Date</th>
                   <th className="px-6 py-4">Area</th>
                   <th className="px-6 py-4">Amount</th>
+                  <th className="px-6 py-4">Enterprise</th>
                   <th className="px-6 py-4">Officer</th>
-                  <th className="px-6 py-4">Status</th>
                 </tr>
+                
               </thead>
+              {listEntries.map((metric) => (
+    <RecentEntriesList
+      key={metric.officer}
+      date={metric.date}
+      area={metric.area}
+      amount={metric.amount}
+      enterprise={metric.enterprise}
+      officer={metric.officer}
+    />
+  ))}
             </table>
           </div>
         </div>
